@@ -1,12 +1,21 @@
-import React from 'react';
+// Libs
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+// Components
+import SearchBar from './components/search_bar';
 
 const API_KEY = "AIzaSyCvyRhAluoUohlVYpcynC5XiInYq2LV4pg";
 
 // Create new component
-const App = () => {
+class App extends Component {
   // Produce HTML
-  return <div>Hi!</div>;
+  render() {
+    return (
+      <div>
+        <SearchBar />
+      </div>
+    )
+  }
 }
 
 
